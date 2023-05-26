@@ -1,3 +1,3 @@
-module github.com/robertobouses/w2v-api
+module github.com/robertobouses/interface_ejercicio5
 
 go 1.20
