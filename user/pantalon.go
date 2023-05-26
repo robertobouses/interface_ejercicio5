@@ -9,8 +9,8 @@ type Pantalon struct {
 	Marca    string
 }
 
-func (P Pantalon) ImporteStock() int {
-	Stock := P.Unidades * int(P.Precio)
+func (P Pantalon) ImporteStock() float32 {
+	Stock := float32(P.Unidades) * P.Precio
 	return Stock
 
 }
@@ -19,6 +19,6 @@ func (P Pantalon) ImporteIva(float32) float32 {
 	return 0
 }
 
-func (P Pantalon) Datos() string {
-	return P.Nombre
+func (P Pantalon) Datos() (string, string) {
+	return P.Nombre, P.Marca
 }

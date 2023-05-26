@@ -29,6 +29,17 @@ func main() {
 
 	for _, prenda := range prendas {
 		stock := prenda.ImporteStock()
+		fmt.Println("dato del Stock:")
 		fmt.Println(stock)
+
+		iva := prenda.ImporteIva(stock)
+		fmt.Println("dato del Iva")
+		fmt.Println(iva)
+
+		fmt.Println(prenda)
+
+		fmt.Println(prenda.Datos())
+		fmt.Println("------------------------")
 	}
+
 }
